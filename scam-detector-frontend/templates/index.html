@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scam Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>🛡️ Scam Detector</h1>
+
+    <form id="email-form">
+        <label>Paste Email Text:</label><br>
+        <textarea name="email_text" rows="6" cols="60"></textarea><br>
+        <button type="submit">Check Email</button>
+    </form>
+    <p id="email-result"></p>
+
+    <form id="url-form">
+        <label>Enter URL:</label><br>
+        <input type="text" name="url"><br>
+        <button type="submit">Check URL</button>
+    </form>
+    <p id="url-result"></p>
+
+    <form id="sender-form">
+        <label>Sender Email:</label><br>
+        <input type="text" name="sender"><br>
+        <button type="submit">Check Sender</button>
+    </form>
+    <p id="sender-result"></p>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
